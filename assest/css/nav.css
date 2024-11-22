@@ -1,0 +1,57 @@
+nav {
+  width: 100vw;
+  padding: 1.8rem 0;
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  min-height: 5rem;
+}
+nav > div {
+  width: 90vw;
+  max-width: 1800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+nav > div > div {
+  display: flex;
+  gap: 1rem;
+}
+nav > div > div > a,
+nav > div > div > i {
+  color: #fff;
+  font-size: 0.95rem;
+}
+nav > div > div > a:hover {
+  text-decoration: 0.5px underline;
+  transition: 0.5s;
+}
+
+/* responsive menu sec  */
+.res-nav-menu-sec {
+  width: 100vw;
+  height: calc(100vh - 5rem);
+  background-color: var(--secondary-color);
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  left: 0;
+  margin-top: 5rem;
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  display: none;
+}
+.res-nav-menu-sec > div {
+  padding: 2rem 1rem;
+}
+.res-nav-menu-sec > div > a > p {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid var(--primary-color);
+}
+.res-nav-menu-sec > div > a:last-child > p {
+  border-bottom: 1px solid var(--primary-color);
+}

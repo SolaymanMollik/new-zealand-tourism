@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- ========================== css & js link it is boiler not my start ====================== -->
+    <link rel="stylesheet" href="assest/boiler/basic.css" />
+    <link rel="stylesheet" href="assest/boiler/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assest/boiler/swiper.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assest/boiler/swiperBoiler.js"></script>
+    <!-- ========================== css & js link it is boiler not my start ====================== -->
+    <style>
+      @media (max-width: 648px) {
+        html {
+          --df: 0.3;
+        }
+      }
+      @media (max-width: 800px) {
+        html {
+          --df: 1;
+        }
+      }
+    </style>
+    <!-- =========================== my own link start =========================== -->
+    <link rel="stylesheet" href="assest/css/nav.css" />
+    <link rel="stylesheet" href="assest/css/hero.css" />
+    <link rel="stylesheet" href="assest/css/description.css" />
+    <link rel="stylesheet" href="assest/css/find-a-tour.css" />
+    <link rel="stylesheet" href="assest/css/find-multi.css" />
+    <link rel="stylesheet" href="assest/css/footer.css" />
+    <link rel="stylesheet" href="assest/css/some-extra.css" />
+
+    <!-- =========================== my own link end =========================== -->
+  </head>
+  <body class="">
+    <!-- main code start here =========================================================== -->
+    <!-- ================== nav start here ================== -->
+    <nav class="">
+      <div>
+        <div class="nav-div-1 md:flex hidden">
+          <img
+            src="assest/img/pure-new-zealand-logo.svg"
+            alt="100% pure new-zealand"
+            width="250"
+          />
+          <a href="#">Plese to visit</a>
+          <a href="#">Things to do</a>
+          <a href="#">Find accommodation</a>
+          <a href="#">plan your trip</a>
+        </div>
+        <div class="nav-div-2 gap-3 md:flex hidden">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-moon" onclick="theam()"></i>
+        </div>
+        <div
+          class="flex md:hidden justify-between w-[95vw] mx-auto text-white align-items-center"
+        >
+          <img
+            src="assest/img/pure-new-zealand-logo.svg"
+            alt="100% pure new-zealand"
+            width="150"
+          />
+          <span><i class="fa-solid fa-bars" id="bar"></i></span>
+        </div>
+      </div>
+    </nav>
+    <!-- responsive menu section -->
+    <section class="res-nav-menu-sec">
+      <div class="res-div">
+        <a href="#"> <p>Places to visit</p></a>
+        <a href="#"> <p>Things to do</p></a>
+        <a href="#"> <p>Find accommodation</p></a>
+        <a href="#"> <p>Plan your trip</p></a>
+        <a href="#"> <p id="res-theme-menu" onclick="theam()">dark theme</p></a>
+      </div>
+    </section>
+    <!-- =================== nav end here =======================  -->
+
+    <!-- ======================= hero start here ==========================  -->
+    <section class="hero-sec">
+      <img class="hidden md:block" src="assest/img/hero-img.jpg" alt="" />
+      <img src="assest/img/card-2-4.jpg" class="block md:hidden" alt="" />
+      <h1 class="md:text-4xl sm:text-3xl lg:text-5xl">
+        MULTI-DAY TOURS AND <br />
+        PACKAGES
+      </h1>
+      <div id="img-des">i</div>
+    </section>
+    <!--  ========================== hero end here =======================  -->
+    <!--  ====================== section --02 some description start here ======================  -->
+    <section class="des-sec">
+      <div>
+        <div class="py-5">
+          <a href="#">Home</a><span> > </span
+          ><a href="#"> Home Plan your trip</a><span> > </span
+          ><a href="#"> Multi-day tours and packages </a>
+        </div>
+
+        <h1 class="font-light sm:text-2xl md:text-3xl sm:w-[80%] md:w-[70%]">
+          New Zealand has so much to offer, so why not book a multi-day tour or
+          package holiday. It’s a great, no-hassle way to travel.
+        </h1>
+      </div>
+    </section>
+    <!-- ======================= section --02 some description end here =======================  -->
+    <!-- ================== find a tour & Sightseeing section start here ==================== -->
+    <section class="find-a-tour-sec">
+      <div class="find-tour">
+        <h1
+          class="py-10 text-xl sm:text-3xl md:text-5xl ml-0 sm:ml-[5rem] font-bold color"
+        >
+          Find a tour
+        </h1>
+        <div class="card-div">
+          <div class="card-1">
+            <img src="assest/img/card-1.jpg" alt="" />
+            <div class="flex gap-2">
+              <a href="#">guided tour and packages</a>
+            </div>
+          </div>
+          <div class="card-2">
+            <img src="assest/img/card-2.jpg" alt="" />
+            <div class="flex gap-2">
+              <a href="#">self guideed tour and packages</a>
+            </div>
+          </div>
+          <div class="card-3">
+            <img src="assest/img/card-3.jpg" alt="" />
+            <div class="flex gap-2">
+              <a href="#">New Zealand itinearises</a>
+            </div>
+          </div>
+          <div class="card-4">
+            <img src="assest/img/card-4.png" alt="" />
+            <div class="flex gap-2">
+              <a href="#">guideed adventure tour</a>
+            </div>
+          </div>
+          <div class="card-5">
+            <img src="assest/img/card-5.jpg" alt="" />
+            <div class="flex gap-2">
+              <a href="#">guided cycleing tours</a>
+            </div>
+          </div>
+          <div class="card-6">
+            <img src="assest/img/card-6.jpg" alt="" />
+            <div class="flex gap-2">
+              <a href="#">self driver tours</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ============= Sightseeing ========== -->
+      <div class="Sightseeing-div">
+        <h1
+          class="py-10 text-xl sm:text-3xl md:text-5xl ml-0 sm:ml-[5rem] font-bold color"
+        >
+          Sightseeing
+        </h1>
+        <div class="w-full flex justify-between flex-wrap">
+          <div class="card-2--1">
+            <img src="assest/img/card-2-1.jpg" class="w-full h-full" alt="" />
+            <a href="#"><div class="text-white">Scenic flight</div></a>
+          </div>
+          <div class="card-2--2">
+            <img src="assest/img/card-2-2.jpg" class="w-full h-full" alt="" />
+            <a href="#"><div class="text-white">Scenic flight</div></a>
+          </div>
+          <div class="card-2--3">
+            <img src="assest/img/card-2-3.jpg" class="w-full h-full" alt="" />
+            <a href="#"><div class="text-white">Scenic flight</div></a>
+          </div>
+          <div class="card-2--4">
+            <img src="assest/img/card-2-4.jpg" class="w-full h-full" alt="" />
+            <a href="#"><div class="text-white">Scenic flight</div></a>
+          </div>
+        </div>
+      </div>
+      <div class="para-div font-semibold color">
+        <p>
+          There’s also
+          <a href="#" class="text-red-500 hover:underline"
+            >New Zealand tour operators</a
+          >
+          that you can work with to create a New Zealand tour based on your
+          interests. Receive advice on where to go, things to see and places to
+          stay. They’ll also make the bookings for you. <br />
+          When you're here, there are tours you can arrange on the day and
+          <a href="#" class="text-red-500 hover:underline"
+            >isite visitor centres</a
+          >
+          are on-hand for advice and bookings too.
+        </p>
+      </div>
+    </section>
+    <!-- ====================== find a tour & Sightseeing section end here ======================= -->
+    <!-- ================= Find more multi-day tours and packages section start here ===========  -->
+    <section class="find-multi-sec bgc">
+      <div class="find-multi-div">
+        <h1 class="text-2xl sm:text-5xl font-semibold color">
+          Find more multi-day tours and packages
+        </h1>
+        <p style="color: var(--primary-color)">
+          <br />
+          Select type of tour:
+        </p>
+        <div
+          class="find-multi-selection-div mt-5 flex justify-between text-sm sm:text-lg"
+        >
+          <div class="flex gap-2">
+            <div class="selection"><a href="#">Guide Tour</a></div>
+            <div class="selection"><a href="#">Group Tour</a></div>
+            <div class="selection"><a href="#">Independent Tour</a></div>
+          </div>
+          <div class="hidden sm:flex">
+            <a href="#"><p class="color">See all 961 tours</p></a>
+          </div>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <a href="#">
+                  <div class="my-slider relative">
+                    <img src="assest/img/slider-1.jpg" alt="" />
+                    <h3 class="text-lg px-3 font-bold">
+                      Mount Cook Day Tour - Ex Christchurch
+                    </h3>
+                    <p class="font-light px-3 text-sm">From NZD $ 327.00</p>
+                    <p class="text-red-500 text-sm absolute left-3 bottom-3">
+                      Qualmark Gold
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#">
+                  <div class="my-slider relative">
+                    <img src="assest/img/slider-2.png" alt="" />
+                    <h3 class="text-lg px-3 font-bold">
+                      Signature | Inspiring North Island Tour
+                    </h3>
+                    <p class="font-light px-3 text-sm">From NZD $ 6549.00</p>
+                    <p class="text-red-500 text-sm absolute left-3 bottom-3">
+                      Qualmark Gold
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#">
+                  <div class="my-slider relative">
+                    <img src="assest/img/slider-3.jpg" alt="" />
+                    <h3 class="text-lg px-3 font-bold">
+                      Ultimate New Zealand Guided Tour - Hiking New Zealand - 24
+                      days
+                    </h3>
+                    <p class="font-light px-3 text-sm">From NZD $ 11150.00</p>
+                    <p class="text-red-500 text-sm absolute left-3 bottom-3">
+                      Qualmark Gold
+                    </p>
+                    <div
+                      class="flex gap-1 absolute left-3"
+                      style="bottom: 3rem"
+                    >
+                      <img src="assest/img/glsses.svg" style="width: 100px" />
+                      <p class="text-xs">
+                        based on <br />
+                        2500 reviews
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <a href="#">
+                  <div class="my-slider relative">
+                    <img src="assest/img/slider-4.jpg" alt="" />
+                    <h3 class="text-lg px-3 font-bold">
+                      Unseen Stewart Island
+                    </h3>
+                    <p class="font-light px-3 text-sm">
+                      NZD $ 6895.00 - NZD $ 9465.00
+                    </p>
+                    <p class="text-red-500 text-sm absolute left-3 bottom-3">
+                      Qualmark Gold
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="see-all-div">
+        <p class="my-2 text-lg color">438 guide tour</p>
+        <a href="#"
+          ><div id="see-all-btn">
+            See all <i class="fa-solid fa-right-arrow"></i></div
+        ></a>
+      </div>
+      <div class="shere-this-page">
+        <p class="text-xl font-bold py-3 text-center color">Shere this page</p>
+        <div class="shere flex gap-2 font-2xl w-[10rem] justify-center mx-auto">
+          <a href="#">
+            <div class="bg-yellow-500">
+              <i class="fa-brands fa-facebook-f"></i></div
+          ></a>
+          <a href="#"
+            ><div class="bg-blue-500">
+              <i class="fa-brands fa-x-twitter"></i></div
+          ></a>
+          <a href="#">
+            <div class="bg-red-500">
+              <i class="fa-solid fa-envelope-open-text"></i></div
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <!--  ============ Find more multi-day tours and packages section end here =================  -->
+    <!-- ============================= footer start here ========================  -->
+    <footer>
+      <!-- <div class="footer-first-div"></div> -->
+      <div class="footer-drop-down">
+        <p>International</p>
+      </div>
+      <div class="main-foot">
+        <div>
+          <h1 class="text-xl font-bold">Find us on</h1>
+
+          <a href="#"
+            ><i class="fa-brands fa-x-twitter text-2xl my-1"></i>
+            <i class="ml-1">x-twitter</i> </a
+          ><br />
+          <a href="#"
+            ><i class="fa-brands fa-instagram text-2xl my-1"></i>
+            <i class="ml-1">instagram</i></a
+          >
+          <br />
+          <a href="#"
+            ><i class="fa-brands fa-facebook-f text-2xl my-1"></i>
+            <i class="ml-1">facebook</i></a
+          ><br />
+          <a href="#"
+            ><i class="fa-brands fa-youtube text-2xl my-1"></i>
+            <i class="ml-1">youtube</i></a
+          ><br />
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Contact Us</h1>
+          <a href="#"><i class="text-md my-1">Site feedback</i></a
+          ><br />
+          <a href="#"><i class="text-md my-1">Need help ?</i></a
+          ><br />
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">Help</h1>
+          <a href="#"><i class="text-md-my-1">FAQs</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">About New Zealand.com </i></a
+          ><br />
+          <a href="#"
+            ><i class="text-md-my-1">Adding your business and deals</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">Linking to New Zealand.com</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">terms of use privacy policy</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">Cookies</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">Manage privacy settings</i></a
+          ><br />
+        </div>
+        <div>
+          <h1 class="text-xl font-bold">our others sites</h1>
+          <a href="#"><i class="text-md-my-1">Media</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">The visual Libery</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">Travel tread</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">Business events</i></a
+          ><br />
+          <a href="#"><i class="text-md-my-1">Corporeate websites</i></a
+          ><br />
+        </div>
+        <img
+          src="assest/img/pure-new-zealand-dual-logo.svg"
+          class="foot-img"
+          alt=""
+        />
+      </div>
+      <div class="developed">
+        <a href="#"><i>Developed with ❤️ by Solayman</i></a>
+      </div>
+    </footer>
+    <!-- ====================== footer end here =======================  -->
+    <section class="some-extra-rete-your-experiences hidden md:block">
+      Rate your experiences
+    </section>
+    <!-- main code end here =========================================================== -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        // freeMode: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          300: {
+            slidesPerView: 1.3,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+
+    <script src="assest/js/app.js"></script>
+  </body>
+</html>

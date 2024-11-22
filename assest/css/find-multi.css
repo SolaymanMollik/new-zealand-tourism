@@ -1,0 +1,82 @@
+.find-multi-sec {
+  width: 100vw;
+  padding: 5rem 0;
+}
+.find-multi-div {
+  width: 85vw;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.selection {
+  padding: 0.1rem 0.6rem;
+  border-radius: 50em;
+  cursor: pointer;
+}
+.selection:first-child {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+.selection:nth-child(2),
+.selection:nth-child(3) {
+  background-color: var(--selection-bg);
+}
+.selection:hover {
+  border: 1px solid var(--primary-color);
+}
+/* ====================== carousel start here ==================== */
+.my-slider {
+  height: 25rem;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 0.2px solid var(--border);
+}
+.my-slider > img {
+  width: 100%;
+  height: 40%;
+}
+.swiper-container {
+  width: 90vw;
+  max-width: 1800px;
+  position: relative;
+  margin: 2rem auto;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+}
+/* carousel end here  */
+.see-all-div {
+  width: 90vw;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+#see-all-btn {
+  max-width: 7rem;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgb(18, 219, 18);
+  color: var(--primary-color);
+}
+#see-all-btn:hover {
+  background-color: rgb(10, 255, 10);
+  transition: 0.52s;
+}
+
+.shere > a > div {
+  width: 3rem;
+  padding: 0.2rem 0;
+  text-align: center;
+  margin: 0 auto;
+}

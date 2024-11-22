@@ -1,0 +1,150 @@
+.find-a-tour-sec {
+  width: 100vw;
+  background-color: var(--secondary-color);
+}
+.find-tour,
+.Sightseeing-div {
+  padding: calc(5rem * var(--df) 0);
+  width: 85vw;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+.find-tour > h1,
+.Sightseeing-div > h1 {
+  font-size: calc(3rem * var(--df));
+  margin-left: 1rem;
+}
+.card-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.card-div > div {
+  overflow: hidden;
+  height: 18rem;
+  position: relative;
+}
+.card-div > div > div {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+.card-div > div > div > a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.card-div > div > div > a:hover {
+  text-decoration: underline;
+  transition: 0.5s;
+}
+.card-1,
+.card-6 {
+  width: 46%;
+  background-color: red;
+
+  margin: 0.2rem;
+}
+.card-5,
+.card-2,
+.card-3,
+.card-4 {
+  width: 23%;
+  background-color: blue;
+}
+.card-2,
+.card-6,
+.card-3 {
+  margin-top: 2rem;
+}
+.card-1 > img,
+.card-2 > img,
+.card-3 > img,
+.card-4 > img,
+.card-5 > img,
+.card-6 > img {
+  width: 100%;
+  height: 100%;
+}
+.card-1 > img:hover,
+.card-2 > img:hover,
+.card-3 > img:hover,
+.card-4 > img:hover,
+.card-5 > img:hover,
+.card-6 > img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+.card-2--1,
+.card-2--2,
+.card-2--3,
+.card-2--4 {
+  overflow: hidden;
+  width: 24%;
+  height: 20rem;
+  margin-top: 0.5rem;
+  position: relative;
+}
+
+.card-2--2,
+.card-2--4 {
+  margin-top: 2rem;
+}
+
+.Sightseeing-div > div > div > img {
+  filter: brightness(0.7);
+}
+.Sightseeing-div > div > div > a > div {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+.para-div {
+  width: 40vw;
+  max-width: 1800px;
+  padding: 7rem 0;
+  margin-left: 10rem;
+  font-size: 1.1rem;
+  margin: 0 auto;
+}
+
+/* media  */
+@media (max-width: 648px) {
+  .card-5,
+  .card-2,
+  .card-3,
+  .card-4 {
+    width: 47% !important;
+    margin-top: 2rem;
+  }
+  .card-1,
+  .card-6 {
+    width: 100% !important;
+  }
+  .find-tour,
+  .Sightseeing-div {
+    width: 100% !important;
+  }
+  .card-2--1,
+  .card-2--2,
+  .card-2--3,
+  .card-2--4 {
+    width: 100% !important;
+    height: 25rem !important;
+    margin-top: 0.5rem !important;
+  }
+  .para-div {
+    width: 95vw;
+    margin: 0 auto !important;
+    font-size: 1rem;
+  }
+}
+@media (max-width: 648px) {
+}
+@media (max-width: 648px) {
+}
+@media (max-width: 648px) {
+}

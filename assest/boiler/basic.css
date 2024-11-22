@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  margin: 0 auto !important;
+  position: relative;
+  background-color: var(--secondary-color);
+  width: 100vw;
+  height: 100vh;
+}
+.dark {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --selection-bg: #e2b8b8;
+  --border: #ffffff95;
+  --df: 1;
+  transition: 1s;
+}
+.light {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --selection-bg: #e2b8b8;
+  --border: #13111195;
+  --df: 1;
+  transition: 1s;
+}
+.color {
+  color: var(--primary-color);
+}
+.bgc {
+  background-color: var(--secondary-color);
+}
+::selection {
+  background-color: red;
+  color: #fff;
+}
+@media (max-width: 648px) {
+  .dark {
+    --df: 0.4;
+  }
+  .light {
+    --df: 0.4;
+  }
+}
+@media (max-width: 800px) {
+  .dark {
+    --df: 0.7;
+  }
+  .light {
+    --df: 0.7;
+  }
+}
+@media (max-width: 648px) {
+}
+@media (max-width: 648px) {
+}
+
+/* vasic font size  */
+@media (max-width: 648px) {
+}
+@media (max-width: 648px) {
+}
+@media (max-width: 648px) {
+}
+@media (max-width: 648px) {
+}
